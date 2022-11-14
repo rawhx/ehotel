@@ -1,0 +1,86 @@
+.rt {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    height: 100vh;
+}
+
+.riwayat {
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px gainsboro;
+    padding: 20px 20px;
+    width: 100%;
+}
+
+.tabel {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.judul {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.judul h6 {
+    text-align: center;
+    width: 150px;
+    border-radius: 20px;
+    padding: 20px 0;
+    background-color: #FFCA7A;
+    margin-left: 45px;
+    font-size: 13pt;
+}
+
+.isitab {
+    max-height: 350px;
+    overflow: auto;
+}
+
+.hasil {
+    margin: 10px;
+    display: flex;
+}
+
+.hasil p {
+    text-align: center;
+    width: 150px;
+    border-radius: 20px;
+    padding: 20px 0;
+    background-color: gainsboro;
+    margin-left: 45px;
+    font-size: 10pt;
+}
+
+.rp {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-shadow: 2px 2px 20px gainsboro;
+    border-radius: 20px;
+}
+
+.rp h1 {
+    font-size: 22pt;
+}
+
+.rp button {
+    background-color: #D19225;
+    border: none;
+    border-radius: 20px;
+    border: 20px;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lilita One';
+}
+
+body::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 7px;
+	background-color: #CFA446;
+}
+
+.header {
+    z-index: 3;
+    background-color: #86621F;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 12px 50px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    font-size: 10pt;
+}
+
+#btn {
+    background-color:  rgba(84, 63, 15, 0.55);
+    padding: 20px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.search svg {
+    margin-left: 15px;
+}
+
+.search input {
+    width: 300px;
+    border: none;
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 15pt;
+    background-color: transparent;
+}
+
+footer {
+    width: 100%;
+}
+
+footer h5 {
+    background-color: #6D521D;
+    color: white;
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+}
+
+.petun {
+    margin: 20px 50px 0 20px; 
+    box-shadow: 4px 4px 25px rgb(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 20px;
+    top: 3.2cm; 
+    position: sticky;
+}
+
+.petun .isinav div {
+    text-align: center;
+    border-bottom: 2px dashed black;
+}
+
+.isinav h4 {
+    margin: 0;
+}
+
+.isinav a {
+    color: black;
+    font-style: none;
+}
+
+.konten {
+    display: flex;
+    justify-content: center;
+}
+
+.macam {
+    box-shadow: 2px 2px 20px rgb(0, 0, 0, 0.2);
+    margin: 30px 20px;
+    width: 800px;
+    height: 500px;
+    max-width: auto;   
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.nama {
+    padding: 25px;
+}
+
+.gambar {
+    margin: 25px;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background: blue;
+}

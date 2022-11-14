@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lilita One';
+}
+
+*::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	border-radius: 7px;
+	background-color: #CFA446;
+}
+
+.header {
+    overflow-x: hidden;
+    z-index: 3;
+    background-color: #86621F;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 12px 50px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    font-size: 10pt;
+    flex-wrap: wrap;
+}
+
+#btn {
+    background-color:  rgba(84, 63, 15, 0.55);
+    padding: 20px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.search label {
+    margin: 0;
+    margin-left: 15px;
+    cursor: text;
+}
+
+.search input {
+    width: 300px;
+    border: none;
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 15pt;
+    background-color: transparent;
+}
+
+footer {
+    width: 100%;
+    z-index: 3;
+    position: relative;
+    bottom: 0;
+}
+
+footer h5 {
+    background-color: #6D521D;
+    color: white;
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+}
+
+.konten {
+    display: flex;
+    justify-content: left;
+}
+
+.petun {
+    margin: 20px 50px 0 20px; 
+    z-index: 1;
+    box-shadow: 4px 4px 25px rgb(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 20px;
+    position: sticky;
+    top: 120px;
+    height: 1%;
+    padding:10px 3%;
+}
+
+.isinav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.isinav .pemesanan {
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+}
+
+.isinav a {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.isinav h4 {
+    margin: 0;
+}
+
+.isinav a {
+    color: black;
+    font-style: none;
+}

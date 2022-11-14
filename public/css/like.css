@@ -1,0 +1,552 @@
+.post_full .post_control {
+	text-align:left;
+	display:inline-block;
+	position:relative;
+	height:25px;
+	width:25px;
+}
+
+.post_full .post_control:after {
+	content:'';
+	position:absolute;
+	top:50%;
+	left:50%;
+	height:24px;
+	width:24px;
+	background:url(https://assets.tumblr.com/images/dashboard_master_sprite.png?b4fdf87b377e8617517587ca626d3c81) no-repeat;
+	opacity:.31;
+	visibility:visible;
+}
+
+.post_full .post_control:hover:after,.post_full .post_control.active:after {
+	opacity:.41;
+}
+
+.post_full .post_control.no_icon,.post_full .post_control.no_icon.show_label {
+	width:auto;
+	vertical-align:top;
+	padding-left:5px;
+}
+
+.post_full .post_control.no_icon:hover {
+	color:rgba(130,139,152,0.9);
+}
+
+
+
+.post_full .post_control.no_icon:after {
+	display:none;
+}
+
+.post_full .post_control.disabled {
+	cursor:default;
+}
+
+.post_full .post_control.disabled:after {
+	opacity:.3;
+}
+
+.post_full .post_control.like:after {
+	background-position:-497px -212px;
+}
+
+.post_full .post_control.like.liked:after {
+	background-position:-526px -212px;
+	opacity:1;
+}
+
+
+
+
+
+
+.post_full .post_poof {
+	background:url(https://assets.tumblr.com/images/dashboard_master_sprite.png?b4fdf87b377e8617517587ca626d3c81) no-repeat;
+	display:block;
+	height:54px;
+	left:50%;
+	margin:-27px 0 0 -27px;
+	position:absolute;
+	top:50%;
+	width:54px;
+	z-index:100;
+	-webkit-animation:post_poof .6s ease-out;
+	-moz-animation:post_poof .6s ease-out;
+	-ms-animation:post_poof .6s ease-out;
+	-o-animation:post_poof .6s ease-out;
+	animation:post_poof .6s ease-out;
+	-webkit-transform-origin:50% 50%;
+	-moz-transform-origin:50% 50%;
+	-ms-transform-origin:50% 50%;
+	-o-transform-origin:50% 50%;
+	transform-origin:50% 50%;
+}
+
+.post_full .post_control .post_poof {
+	top:-27px;
+}
+
+
+
+.post_full .post_animated_heart {
+	background-position:0 -420px;
+	-webkit-animation:like_poof .6s ease-out;
+	-moz-animation:like_poof .6s ease-out;
+	-ms-animation:like_poof .6s ease-out;
+	-o-animation:like_poof .6s ease-out;
+	animation:like_poof .6s ease-out;
+}
+
+.post_full .post_animated_heart span {
+	display:none;
+}
+
+.post_full .post_animated_heart.unliked {
+	background:transparent;
+	-webkit-animation:none;
+	-moz-animation:none;
+	-ms-animation:none;
+	-o-animation:none;
+	animation:none;
+}
+
+.post_full .post_animated_heart.unliked span {
+	background:url(https://assets.tumblr.com/images/dashboard_master_sprite.png?b4fdf87b377e8617517587ca626d3c81) no-repeat;
+	display:block;
+	height:100%;
+	left:50%;
+	position:absolute;
+	top:0;
+}
+
+.post_full .post_animated_heart.unliked span.heart_left {
+	background-position:0 -360px;
+	width:26px;
+	-webkit-transform-origin:26px 54px;
+	-moz-transform-origin:26px 54px;
+	-ms-transform-origin:26px 54px;
+	-o-transform-origin:26px 54px;
+	transform-origin:26px 54px;
+	-webkit-animation:unlike_heartbreak_left .6s ease-out;
+	-moz-animation:unlike_heartbreak_left .6s ease-out;
+	-ms-animation:unlike_heartbreak_left .6s ease-out;
+	-o-animation:unlike_heartbreak_left .6s ease-out;
+	animation:unlike_heartbreak_left .6s ease-out;
+}
+
+.post_full .post_animated_heart.unliked span.heart_right {
+	background-position:-29px -360px;
+	width:29px;
+	-webkit-transform-origin:0 54px;
+	-moz-transform-origin:0 54px;
+	-ms-transform-origin:0 54px;
+	-o-transform-origin:0 54px;
+	transform-origin:0 54px;
+	-webkit-animation:unlike_heartbreak_right .6s ease-out;
+	-moz-animation:unlike_heartbreak_right .6s ease-out;
+	-ms-animation:unlike_heartbreak_right .6s ease-out;
+	-o-animation:unlike_heartbreak_right .6s ease-out;
+	animation:unlike_heartbreak_right .6s ease-out;
+}
+
+#posts.posts {
+	list-style-type:none;
+  text-align:center;
+  vertical-align:middle;
+}
+
+#posts.posts>.post_container {
+	margin:0 0 20px;
+}
+
+#posts.posts>li:last-child {
+	margin:0;
+}
+
+
+#posts.posts .post {
+	clear:both;
+}
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (-moz-min-device-pixel-ratio:2),only screen and (-o-min-device-pixel-ratio:21),only screen and (min-device-pixel-ratio:2),only screen and (min-resolution:192dpi),only screen and (min-resolution:2dppx) {
+	.post_full .post_info .reblog_icon,.post_full .post_avatar:after,.post_full .post_control:after,.post_full .post_animated_heart,.post_full .post_animated_heart.unliked span,.post_full .post_info .private_label:after,.post_full .post_avatar.show_user_menu .post_avatar_link:after,.share_options a:before,#posts .post .post_controls .photo_reply_placeholder,#posts .post .post_control.photo_reply .photo_reply_icon_base {
+		background-image:url(https://assets.tumblr.com/images/dashboard_master_sprite_2x.png?40bb91af2f67599b07b50eec80abbce0);
+		background-size:972px 471px;
+	}
+	
+	#blog_url_arrow {
+		background-image:url(https://assets.tumblr.com/images/dashboard_controls/dashboard_controls_sprite_2x.png?88071ca3ddca81e36c2e1d38adb26dd4);
+		background-size:473px 2700px;
+	}
+	
+	.post.post_full .post_permalink {
+		background-image:url(https://assets.tumblr.com/images/posts/dogear_2x.png?2);
+		background-size:23px 23px;
+	}
+	
+	.post_full .post_answer_avatar:after {
+		background-image:url(https://assets.tumblr.com/images/post_answer_input_nipple_2x.png?bb6c2103d074ea5e4b1265e0fab95b1e);
+		background-size:30px 20px;
+	}
+}
+@-webkit-keyframes like_poof {
+	0% {
+		opacity:1;
+		-webkit-transform:rotate(0deg);
+	}
+	
+	25% {
+		opacity:1;
+		-webkit-transform:rotate(-20deg);
+	}
+	
+	75% {
+		-webkit-transform:rotate(20deg);
+	}
+	
+	100% {
+		margin-top:-80px;
+		opacity:0;
+		-webkit-transform:rotate(0deg);
+	}
+}
+
+@-moz-keyframes like_poof {
+	0% {
+		opacity:1;
+		-moz-transform:rotate(0deg);
+	}
+	
+	25% {
+		opacity:1;
+		-moz-transform:rotate(-20deg);
+	}
+	
+	75% {
+		-moz-transform:rotate(20deg);
+	}
+	
+	100% {
+		margin-top:-80px;
+		opacity:0;
+		-moz-transform:rotate(0deg);
+	}
+}
+
+@-ms-keyframes like_poof {
+	0% {
+		opacity:1;
+		-ms-transform:rotate(0deg);
+	}
+	
+	25% {
+		opacity:1;
+		-ms-transform:rotate(-20deg);
+	}
+	
+	75% {
+		-ms-transform:rotate(20deg);
+	}
+	
+	100% {
+		margin-top:-80px;
+		opacity:0;
+		-ms-transform:rotate(0deg);
+	}
+}
+
+@-o-keyframes like_poof {
+	0% {
+		opacity:1;
+		-o-transform:rotate(0deg);
+	}
+	
+	25% {
+		opacity:1;
+		-o-transform:rotate(-20deg);
+	}
+	
+	75% {
+		-o-transform:rotate(20deg);
+	}
+	
+	100% {
+		margin-top:-80px;
+		opacity:0;
+		-o-transform:rotate(0deg);
+	}
+}
+
+@keyframes like_poof {
+	0% {
+		opacity:1;
+		transform:rotate(0deg);
+	}
+	
+	25% {
+		opacity:1;
+		transform:rotate(-20deg);
+	}
+	
+	75% {
+		transform:rotate(20deg);
+	}
+	
+	100% {
+		margin-top:-80px;
+		opacity:0;
+		transform:rotate(0deg);
+	}
+}
+
+@-webkit-keyframes unlike_heartbreak_left {
+	0% {
+		opacity:1;
+		margin-top:-36px;
+		-webkit-transform:rotate(0deg);
+	}
+	
+	30% {
+		opacity:1;
+		margin-top:-36px;
+	}
+	
+	80% {
+		opacity:0;
+		margin-top:0;
+		-webkit-transform:rotate(-15deg);
+	}
+	
+	100% {
+		opacity:0;
+		margin-top:0;
+		-webkit-transform:rotate(-15deg);
+	}
+}
+
+@-moz-keyframes unlike_heartbreak_left {
+	0% {
+		opacity:1;
+		margin-top:-36px;
+		-moz-transform:rotate(0deg);
+	}
+	
+	30% {
+		opacity:1;
+		margin-top:-36px;
+	}
+	
+	80% {
+		opacity:0;
+		margin-top:0;
+		-moz-transform:rotate(-15deg);
+	}
+	
+	100% {
+		opacity:0;
+		margin-top:0;
+		-moz-transform:rotate(-15deg);
+	}
+}
+
+@-ms-keyframes unlike_heartbreak_left {
+	0% {
+		opacity:1;
+		margin-top:-36px;
+		-ms-transform:rotate(0deg);
+	}
+	
+	30% {
+		opacity:1;
+		margin-top:-36px;
+	}
+	
+	80% {
+		opacity:0;
+		margin-top:0;
+		-ms-transform:rotate(-15deg);
+	}
+	
+	100% {
+		opacity:0;
+		margin-top:0;
+		-ms-transform:rotate(-15deg);
+	}
+}
+
+@-o-keyframes unlike_heartbreak_left {
+	0% {
+		opacity:1;
+		margin-top:-36px;
+		-o-transform:rotate(0deg);
+	}
+	
+	30% {
+		opacity:1;
+		margin-top:-36px;
+	}
+	
+	80% {
+		opacity:0;
+		margin-top:0;
+		-o-transform:rotate(-15deg);
+	}
+	
+	100% {
+		opacity:0;
+		margin-top:0;
+		-o-transform:rotate(-15deg);
+	}
+}
+
+@keyframes unlike_heartbreak_left {
+	0% {
+		opacity:1;
+		margin-top:-36px;
+		transform:rotate(0deg);
+	}
+	
+	30% {
+		opacity:1;
+		margin-top:-36px;
+	}
+	
+	80% {
+		opacity:0;
+		margin-top:0;
+		transform:rotate(-15deg);
+	}
+	
+	100% {
+		opacity:0;
+		margin-top:0;
+		transform:rotate(-15deg);
+	}
+}
+
+@-webkit-keyframes unlike_heartbreak_right {
+	0% {
+		opacity:1;
+		margin-top:-36px;
+		-webkit-transform:rotate(0deg);
+	}
+	
+	30% {
+		opacity:1;
+		margin-top:-36px;
+	}
+	
+	80% {
+		opacity:0;
+		margin-top:0;
+		-webkit-transform:rotate(15deg);
+	}
+	
+	100% {
+		opacity:0;
+		margin-top:0;
+		-webkit-transform:rotate(15deg);
+	}
+}
+
+@-moz-keyframes unlike_heartbreak_right {
+	0% {
+		opacity:1;
+		margin-top:-36px;
+		-moz-transform:rotate(0deg);
+	}
+	
+	30% {
+		opacity:1;
+		margin-top:-36px;
+	}
+	
+	80% {
+		opacity:0;
+		margin-top:0;
+		-moz-transform:rotate(15deg);
+	}
+	
+	100% {
+		opacity:0;
+		margin-top:0;
+		-moz-transform:rotate(15deg);
+	}
+}
+
+@-ms-keyframes unlike_heartbreak_right {
+	0% {
+		opacity:1;
+		margin-top:-36px;
+		-ms-transform:rotate(0deg);
+	}
+	
+	30% {
+		opacity:1;
+		margin-top:-36px;
+	}
+	
+	80% {
+		opacity:0;
+		margin-top:0;
+		-ms-transform:rotate(15deg);
+	}
+	
+	100% {
+		opacity:0;
+		margin-top:0;
+		-ms-transform:rotate(15deg);
+	}
+}
+
+@-o-keyframes unlike_heartbreak_right {
+	0% {
+		opacity:1;
+		margin-top:-36px;
+		-o-transform:rotate(0deg);
+	}
+	
+	30% {
+		opacity:1;
+		margin-top:-36px;
+	}
+	
+	80% {
+		opacity:0;
+		margin-top:0;
+		-o-transform:rotate(15deg);
+	}
+	
+	100% {
+		opacity:0;
+		margin-top:0;
+		-o-transform:rotate(15deg);
+	}
+}
+
+@keyframes unlike_heartbreak_right {
+	0% {
+		opacity:1;
+		margin-top:-36px;
+		transform:rotate(0deg);
+	}
+	
+	30% {
+		opacity:1;
+		margin-top:-36px;
+	}
+	
+	80% {
+		opacity:0;
+		margin-top:0;
+		transform:rotate(15deg);
+	}
+	
+	100% {
+		opacity:0;
+		margin-top:0;
+		transform:rotate(15deg);
+	}
+}

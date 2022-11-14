@@ -1,0 +1,31 @@
+.cari {
+    margin: 30px 0 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tp {
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px gainsboro;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:0 55px 55px 0;
+}
+
+.gr {
+    background-color: aqua;
+    width: 150px;
+    height: 150px;
+    margin: 0 20px 20px 20px;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.like {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-top: 25px;
+}

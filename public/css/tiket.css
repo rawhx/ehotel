@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.tiket {
+    margin: 30px 25px 50px 0;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px gainsboro;
+    width: 100%;
+    padding: 50px;
+}
+
+.id h3{
+    font-size: 18pt;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #C88109;
+    color: white;
+    width: 250px;
+    padding: 10px 25px;
+}
+
+.bentuk {
+    margin-top: 50px;
+    background-color: #C88109;
+    padding: 50px;
+    display: block;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.bentuk-a{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bentuk-a h3 {
+    color: white;
+}
+
+.bentuk-a h6 {
+    padding: 20px 20px;
+    background-color: antiquewhite;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+.detail {
+    margin-top: 50px;
+}
+
+table tr td {
+    font-size: 10pt;
+    font-family: 'Poppins';
+    padding: 25px 20px 0 0;
+}

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.pencarian {
+    width: 100%;
+    padding: 20px 20px 30px 20px;
+}
+
+.hotel {
+    display: flex;
+    padding: 0 20px 0 0;
+    height: 170px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 25px rgb(0, 0, 0, 0.1);
+}
+
+.gambar {
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    height: 170px;
+    margin-right: 20px;
+    border-radius: 20px 0 0 20px;
+}
+
+
+.pesan input{
+    cursor: pointer;
+    color: white;
+    border-radius: 15px;
+    margin:50px 0 20px 0;
+    padding: 10px;
+    border: none;
+    background-color: #CFA446;
+}

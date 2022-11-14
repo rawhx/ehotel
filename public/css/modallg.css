@@ -1,0 +1,112 @@
+.form form {
+    padding: 30px;
+}
+
+.form .inputreg .kirim {
+    margin-top: 20px;
+}
+
+.inputreg input {
+    border: none;
+    margin-top: 20px;
+    width: 400px;
+    font-family: 'lilita one';
+    font-size: 12pt;
+    border-radius: 20px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.kirimreg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+}
+
+.kirimreg input {
+    background-color: #CFA446;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lilita One';
+    border-radius: 20px;
+}
+
+.google h4 {
+    padding-left: 40px;
+}
+
+.form form {
+    padding: 30px;
+}
+
+.form .input .kirim {
+    margin-top: 20px;
+}
+
+.input input {
+    border: none;
+    width: 400px;
+    font-family: 'lilita one';
+    font-size: 12pt;
+    border-radius: 20px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.kirim {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin: 15px 0 0 0;
+}
+
+.kirim input {
+    background-color: #CFA446;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lilita One';
+    border-radius: 20px;
+}
+
+.google a{
+    margin: 30px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    color: black;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#registrasi::-webkit-scrollbar {
+    width: 0;
+}
+
+.kirimdp input {
+    background-color: #CFA446;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lilita One';
+    border-radius: 20px;   
+}
+
+.kirimdp {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 20px 0 0 0;
+}
