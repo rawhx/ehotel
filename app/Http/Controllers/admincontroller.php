@@ -3,20 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\hotel;
 use Illuminate\Http\Request;
 
 class admincontroller extends Controller
 {
-    public function user()
+    public function manage_user()
     {
-        $data = User::all();
-        return view('admin/pengguna', ['data'=>$data]);
-        // return view('admin/pengguna');
+        $user = User::all();
+        return view('admin/pengguna', ['data'=>$user]);
     }
-    public function hotel()
+    public function manage_hotel()
     {
-        $data = User::all();
-        return view('admin/properti', ['data'=>$data]);
-        // return view('admin/pengguna');
+        $hotel = hotel::all();
+        return view('admin/properti', ['hotel'=>$hotel]);
     }
 }

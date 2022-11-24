@@ -71,7 +71,7 @@
                 <div class="judul-column">
                     <div class="no"><h6 style="width: 50px">NO</h6></div>
                     <div class="ehp"><h6  style="width: 250px">EMAIL</h6></div>
-                    <div class="password"><h6  style="width: 250px">PASSWORD</h6></div>
+                    <div class="password"><h6  style="width: 250px">NAMA</h6></div>
                     <div class="tindakan"><h6  style="width: 150px">TINDAKAN</h6></div>
                 </div>
                 <div class="xx">
@@ -80,10 +80,10 @@
                         <div class="isi-column">
                             <div class="no"><P style="width: 50px">{{ $loop->iteration}}</P></div>
                             <div class="ehp"><P style="width: 250px">{{$item['email']}}</P></div>
-                            <div class="password"><P style="width: 250px; overflow: hidden;">{{$item['password']}}</P></div>
+                            <div class="password"><P style="width: 250px; overflow: hidden;">{{$item['name']}}</P></div>
                             <div class="tindakan"><p style="width: 150px; display: flex; justify-content: space-evenly">
-                                <a href=""><span class="iconify" data-icon="fluent:delete-16-regular" style="color: red;" data-width="20"></span></a>
-                                <a href=""><span class="iconify" data-icon="grommet-icons:update" style="color: blue;" data-width="20"></span></a>
+                                <a><span class="iconify" data-icon="fluent:delete-16-regular" style="color: red;" data-width="20"></span></a>
+                                <a href=""><span class="iconify" data-icon="grommet-icons:update" style="color: blue;" data-width="20"></span></a>     
                             </p></div>
                         </div>
                         {{-- @endfor --}}

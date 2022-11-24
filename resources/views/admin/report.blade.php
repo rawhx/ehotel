@@ -39,12 +39,12 @@
                     </a>
                 </div>
                 <div class="properti" style="padding: 5px 0;">
-                    <a href="/properti" class="nav-link"  style="color: #C88109">
+                    <a href="/properti" class="nav-link text-dark">
                         <h4>DAFTAR PROPERTI</h4>
                     </a>
                 </div>
                 <div class="masalah" style="padding: 5px 0;">
-                    <a href="" class="nav-link text-dark">
+                    <a href="" class="nav-link" style="color: #C88109">
                         <h4>LAPORAN PERMASALAHAN</h4>
                     </a>
                 </div>
@@ -72,16 +72,18 @@
                 <div class="judul-column">
                     <div class="no"><h6 style="width: 50px">NO</h6></div>
                     <div class="ehp"><h6  style="width: 250px">EMAIL</h6></div>
-                    <div class="password"><h6  style="width: 250px">LAPORAN MASALAH</h6></div>
+                    <div class="password"><h6  style="width: 400px">LAPORAN MASALAH</h6></div>
                 </div>
                 <div class="xx">
-                    @for ($i = 0; $i < 100; $i++)
+                    @foreach ($report as $item)
+                    {{-- @for ($i = 0; $i < 100; $i++) --}}
                     <div class="isi-column">
-                        <div class="no"><P style="width: 50px">{{$i+1}}</P></div>
-                        <div class="ehp"><P style="width: 250px">achmadhasbil04@gmail.com</P></div>
-                        <div class="password"><P style="width: 250px">8201090</P></div>
+                        <div class="no"><P style="width: 50px">{{ $loop->iteration}}</P></div>
+                        <div class="ehp" style="overflow: hidden"><P style="width: 250px">{{$item['report']}}</P></div>
+                        <div class="password"><P style="width: 400px; overflow: visible; padding: 5px">{{$item['report']}}</P></div>
                     </div>
-                    @endfor
+                    {{-- @endfor --}}
+                    @endforeach
                 </div>
             </div>
         </div>

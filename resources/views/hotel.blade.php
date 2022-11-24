@@ -19,7 +19,7 @@
     <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
 </head>
 <body>
-    <div class="xx" style="position: absolute;">@include('item/modal')</div>
+    <div class="xx" style="position: absolute;">@include('item/modal') @include('item/alert')</div>
 
     <div class="header">
         <div class="logo">
@@ -35,7 +35,7 @@
                 </a>
             </div>
             <div class="report">
-                <a href="">
+                <a href="" data-toggle="modal" data-target="#rp">
                     <span class="iconify" data-icon="ic:baseline-report-gmailerrorred" style="color: red;" data-width="25"></span>
                 </a>
             </div>

@@ -52,7 +52,7 @@
                         </a>
                     </div>
                     <div class="masalah" style="padding: 5px 0;">
-                        <a href="" class="nav-link text-dark">
+                        <a href="/report" class="nav-link text-dark">
                             <h4 style="font-size: 13pt">LAPORAN PERMASALAHAN</h4>
                         </a>
                     </div>
@@ -118,8 +118,8 @@
                             <input type="email" name="email" id="email" value="{{auth()->user()->email}}">
                             <label for="email" style="cursor: pointer;"><i class="bi bi-pencil-square"></i></label>
                         </div>
-                        <div class="password">
-                            <input type="password" name="password" id="password" value="{{auth()->user()->password}}" min="8">
+                        <div class="password">{{-- {{auth()->user()->password}} --}}
+                            <input type="password" name="password" id="password" value="" min="8">
                             <label for="password" style="cursor: pointer;"><i class="bi bi-pencil-square"></i></label>
                         </div>
                         <div class="kk" style="display: flex; justify-content: center; padding: 0; box-shadow: none">

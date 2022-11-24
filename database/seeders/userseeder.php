@@ -15,12 +15,12 @@ class userseeder extends Seeder
      */
     public function run()
     {
-        // User::truncate();
-        // User::create([
-        //     'name'=>'hasbil',
-        //     'email'=>'achmadhasbil04@gmail.com',
-        //     'password'=>bcrypt('12345678')
-        // ]);
+        User::truncate();
+        User::create([
+            'name'=>'hasbil',
+            'email'=>'achmadhasbil04@gmail.com',
+            'password'=>bcrypt('12345678')
+        ]);
 
     }
 }

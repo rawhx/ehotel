@@ -93,18 +93,43 @@
         <div class="modal-content">
             <div class="modal-body">
                 <div class="form">
-                    <form action="" method="POST">
+                    <form action="daftarp" method="POST">
+                        @csrf
                         <div class="judul" style="justify-content: start">
                             <h1>Daftar Properti</h1>
                         </div>
                         <div class="inputreg">
-                            <input type="text" name="username" id="username" placeholder="Masukan Nama Hotel" required>
-                            <input type="email" name="email" id="email" placeholder="Masukan Kota" required>
-                            <input type="text" name="provinsi" id="hp" placeholder="Masukan Provinsi" required>
-                            <input type="number" min="0" name="no telp" id="password" placeholder="Masukan No Telphone" required>
+                            <input type="text" name="name" id="name" placeholder="Masukan Nama Hotel" required>
+                            <input type="text" name="kota" id="kota" placeholder="Masukan Kota" required>
+                            <input type="text" name="provinsi" id="provinsi" placeholder="Masukan Provinsi" required>
+                            <input type="number" min="0" name="no_telp" id="no_telp" placeholder="Masukan No Telphone" required>
                         </div>
                         <div class="kirimdp">
                             <input type="submit" name="masuk" value="Daftar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{-- modal report --}}
+<div class="modal fade" id="rp" style="overflow-y: scroll;" role="dialog" aria-labelledby="registrasilabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="form">
+                    <form action="report" method="POST">
+                        @csrf
+                        <div class="judul" style="justify-content: start">
+                            <h1>LAPORKAN PERMASALAHAN</h1>
+                        </div>
+                        <div class="inputreg">
+                            <textarea name="report" id="report" cols="38" rows="8" style="border: none; box-shadow: 2px 2px 10px gainsboro; border-radius: 10px; padding: 20px" placeholder="Masukan Deskripsi"></textarea>
+                        </div>
+                        <div class="kirimdp">
+                            <input type="submit" name="kirim" value="Kirim">
                         </div>
                     </form>
                 </div>

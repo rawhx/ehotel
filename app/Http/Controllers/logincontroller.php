@@ -41,6 +41,7 @@ class logincontroller extends Controller
             User::create($validasi);
         } 
         $request->session()->flash('berhasil', 'Registrasi Berhasil');
+        Auth::logout();
         return back();
     }
 
@@ -49,21 +50,6 @@ class logincontroller extends Controller
         Auth::logout();
         return redirect('/')->with('logout', 'Berhasil Logout');
     }
-
-    // public function admin(Request $request)
-    // {
-    //     $login = $request->validate([
-    //         'email' => 'required',
-    //         'password' => 'required'
-    //     ]);
-
-    //     if (Auth::attempt($login) == Auth::check('lvl["admin"]')) {
-    //         $request->session()->regenerate();
-    //         return redirect('profile')->with('login', 'Selamat Datang Di E-HOTEL');
-    //     } else {
-    //         return back()->with('gagal', 'Login Gagal!');
-    //     }
-    // }
 
     public function update_profile(Request $request)
     {

@@ -71,22 +71,23 @@
             <div class="pp">
                 <div class="judul-column">
                     <div class="no"><h6 style="width: 50px">NO</h6></div>
-                    <div class="ehp"><h6  style="width: 250px">EMAIL/NO HP</h6></div>
-                    <div class="password"><h6  style="width: 250px">PASSWORD</h6></div>
+                    <div class="ehp"><h6  style="width: 250px">NAMA HOTEL</h6></div>
+                    <div class="password"><h6  style="width: 250px">KOTA</h6></div>
+                    <div class="password"><h6  style="width: 250px">PEMILIK</h6></div>
                     <div class="tindakan"><h6  style="width: 150px">TINDAKAN</h6></div>
                 </div>
                 <div class="xx">
-                    @for ($i = 0; $i < 100; $i++)
+                    @foreach ($hotel as $item)
                     <div class="isi-column">
-                        <div class="no"><P style="width: 50px">{{$i+1}}</P></div>
-                        <div class="ehp"><P style="width: 250px">achmadhasbil04@gmail.com</P></div>
-                        <div class="password"><P style="width: 250px">8201090</P></div>
+                        <div class="no"><P style="width: 50px">{{$loop->iteration}}</P></div>
+                        <div class="ehp"><P style="width: 250px">{{$item['name']}}</P></div>
+                        <div class="password"><P style="width: 250px">{{$item['kota']}}</P></div>
+                        <div class="password"><P style="width: 250px">{{$item['id_user']}}</P></div>
                         <div class="tindakan"><p style="width: 150px; display: flex; justify-content: space-evenly">
                             <span class="iconify" data-icon="fluent:delete-16-regular" style="color: red;" data-width="18"></span>
-                            <span class="iconify" data-icon="grommet-icons:update" style="color: blue;" data-width="18"></span>
                         </p></div>
                     </div>
-                    @endfor
+                    @endforeach
                 </div>
             </div>
         </div>

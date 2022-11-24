@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
 
-destinasi::-webkit-scrollbar, 
-.pencarian::-webkit-scrollbar{
-    height: 0;
-}
-
 *::-webkit-scrollbar
 {
 	width: 7px;
@@ -53,6 +48,7 @@ destinasi::-webkit-scrollbar,
 .pp {
     padding: 10px;
     height: 73vh;
+    overflow-x: auto;
 }
 
 .judul-column {
@@ -88,6 +84,8 @@ destinasi::-webkit-scrollbar,
 .xx {
     max-height: 350px;
     overflow-y: auto;
+    overflow-x: hidden;
+    width: fit-content;
 }
 
 .tindakan p{
