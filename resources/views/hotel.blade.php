@@ -28,6 +28,7 @@
     </div>
 
     <div class="tampilan">
+        @auth
         <div class="icon">
             <div class="like" style="margin-right: 25px">
                 <a href="">
@@ -40,6 +41,20 @@
                 </a>
             </div>
         </div>
+        @else
+        <div class="icon">
+            <div class="like" style="margin-right: 25px">
+                <a href="" data-toggle="modal" data-target="#pg">
+                    <span class="iconify" data-icon="icon-park-outline:like" style="color: black" data-width="25"></span>
+                </a>
+            </div>
+            <div class="report">
+                <a href="" data-toggle="modal" data-target="#pg">
+                    <span class="iconify" data-icon="ic:baseline-report-gmailerrorred" style="color: red;" data-width="25"></span>
+                </a>
+            </div>
+        </div>
+        @endauth
 
         <div class="isi">
             <div class="gambar">
@@ -59,26 +74,40 @@
                 </div>
             </div>
             <div class="keterangan">
-                <div class="maps">
-
+                <div class="maps" onclick="location.href='/maps'">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d986.077262926225!2d115.26324613590414!3d-8.662129532490276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1668823610966!5m2!1sid!2sid" width="602" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="text">
                     <div class="ratting">
                         <div class="judul">
                             <h4 style="margin: 0">METRO GARDEN</h4>
                         </div>
+                        @auth
+                        <form action="" method="post">
+                            <div class="bintang">
+                                <div class="rating">
+                                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                                  </div>
+                            </div>
+                        </form>
+                        @else
                         <div class="bintang">
-                            <div class="rating">
-                                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
-                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            <div class="rating" data-toggle="modal" data-target="#pg">
+                                <input type="radio" name="rating" value="5" id="5" disabled><label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4" disabled><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3" disabled><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2" disabled><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1" disabled><label for="1">☆</label>
                               </div>
                         </div>
+                        @endauth
                     </div>
                     <div class="des">
-                        <p style="font-size: 11pt">hotel metro garden berada di denpasar bali, indonesia. hotel ini menawarkan keindahan view yang langsung menghadap ke laut.  serta kami menawarkan fasilitas hotel yang cukup lengkap.</p>
+                        <p style="font-size: 11pt; font-family: 'Crimson Pro'">hotel metro garden berada di denpasar bali, indonesia. hotel ini menawarkan keindahan view yang langsung menghadap ke laut.  serta kami menawarkan fasilitas hotel yang cukup lengkap.</p>
                         <h6 style="margin-top: 10px; text-align: right">Rp 230.000,00</h6>
                     </div>
                     <div class="pesan">

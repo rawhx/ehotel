@@ -57,8 +57,13 @@
                         </a>
                     </div>
                     <div class="ratting" style="padding: 5px 0;">
-                        <a href="" class="nav-link text-dark">
+                        <a href="/ratting" class="nav-link text-dark">
                             <h4 style="font-size: 13pt">DAFTAR RATTING</h4>
+                        </a>
+                    </div>
+                    <div class="transaksi" style="padding: 5px 0;">
+                        <a href="/transaksi" class="nav-link text-dark">
+                            <h4 style="font-size: 13pt">DAFTAR TRANSAKSI</h4>
                         </a>
                     </div>
                     <div class="logout" style="padding: 5px 0; border: none;">
@@ -68,6 +73,26 @@
                     </div>
                 </div>
             </div>
+        @elseif (auth()->user()->lvl=='admin_hotel')
+        <div class="petun">
+            <div class="isinav" style="margin: 35px;">
+                <div class="transasi" style="padding: 15px 0;">
+                    <a href="/data-transaksi" class="nav-link text-dark">
+                        <h4>TRANSAKSI</h4>
+                    </a>
+                </div>
+                <div class="properti" style="padding: 15px 0;">
+                    <a href="/edit" class="nav-link text-dark">
+                        <h4>PROPERTI SAYA</h4>
+                    </a>
+                </div>
+                <div class="logout" style="padding: 15px 0; border: none;">
+                    <a href="logout" class="nav-link text-danger" style="border: none">
+                        <h4>KELUAR</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
         @else
             <div class="petun">
                 <div class="isinav" style="margin: 35px;">
@@ -89,7 +114,9 @@
                 </div>
             </div>
         @endif
-        <form action="" class="po">
+        <form action="update/{{auth()->user()->id}}" method="POST" class="po">
+            @method('put')
+            @csrf
             <div class="macam">
                 <div class="frm" style="display: flex; justify-content: center">
                     <div id='profile-upload'>
@@ -104,10 +131,6 @@
                 {{-- <div class="gambar">
                     
                 </div> --}}
-    
-                {{-- <div class="username">
-                    ACHMAD HASBIL WAFI RAHMAWAN
-                </div> --}}
                 <div class="fm">
                     <div style="display: flex; flex-direction: column; justify-content: center">
                         <div class="nama">
@@ -118,8 +141,8 @@
                             <input type="email" name="email" id="email" value="{{auth()->user()->email}}">
                             <label for="email" style="cursor: pointer;"><i class="bi bi-pencil-square"></i></label>
                         </div>
-                        <div class="password">{{-- {{auth()->user()->password}} --}}
-                            <input type="password" name="password" id="password" value="" min="8">
+                        <div class="password">
+                            <input type="password" name="password" id="password" placeholder="Masukkan Kata Sandi Lama Atau Baru" min="8" required>
                             <label for="password" style="cursor: pointer;"><i class="bi bi-pencil-square"></i></label>
                         </div>
                         <div class="kk" style="display: flex; justify-content: center; padding: 0; box-shadow: none">

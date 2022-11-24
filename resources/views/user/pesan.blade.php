@@ -68,21 +68,21 @@
                 <div class="bentuk-a">
                     <div class="isi-bentuk-a">
                         <h3>Nama</h3>
-                        <h6>Achmad Hasbil Wafi Rahmawan</h6>
+                        <h6 style="width: 300px">Achmad Hasbil Wafi Rahmawan</h6>
                     </div>
                     <div class="isi-bentuk-a">
                         <h3>Email</h3>
-                        <h6>Achmad Hasbil Wafi Rahmawan</h6>
+                        <h6 style="width: 300px">Achmadhasbil24@gmail.com</h6>
                     </div>
                 </div>
                 <div class="bentuk-a" style="margin: 0">
                     <div class="isi-bentuk-a">
-                        <h3>Nama</h3>
-                        <h6>Achmad Hasbil Wafi Rahmawan</h6>
+                        <h3>Pembayaran</h3>
+                        <h6 style="width: 300px">INDOMARET</h6>
                     </div>
                     <div class="isi-bentuk-a">
                         <h3>Tanggal Pemesanan</h3>
-                        <h6>Achmad Hasbil Wafi Rahmawan</h6>
+                        <h6 style="width: 300px">22 / 09 / 2022</h6>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
         </div>
     </div>
 
-    <footer style="position: sticky">
+    <footer>
         <h5>© ACHMAD HASBIL </h5>
     </footer>
 </body>

@@ -7,15 +7,17 @@ use Illuminate\Http\Request;
 
 class manage_user extends Controller
 {
-    public function banned(Request $request)
+    public function delete($item)
     {
-        $validasi = $request->validate([
-            'lvl' => 'admin'
-        ]);
-        User::update($validasi);
-        $request->session()->flash('berhasil', 'Registrasi Mendaftarkan Properti Berhasil');
-        return back();
-        // $this->user()->where('id', $request);
-        // $this->user()->update('lvl', array['active'=>'banned']);
+        User::destroy($item);
+		return back()->with('logout', 'Berhasil Dihapus');
+    }
+
+    public function banned(Request $request,$item)
+    { 
+        $user = User::findOrFail($item);
+        $user->lvl = $request->lvl;
+        $user->update();
+        return redirect('/users')->with('logout', 'Level Berhasil Di Ganti');
     }
 }

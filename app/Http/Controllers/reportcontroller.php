@@ -10,12 +10,13 @@ class reportcontroller extends Controller
     public function report(Request $request)
     {
         $validasi = $request->validate([
+            'email'=>'',
             'report'=> 'required',
         ]);
         
         report::create($validasi); 
         $request->session()->flash('berhasil', 'Berhasil Melakukan Report');
-        return back();
+        return redirect('/');
     }
 
     public function tampil_report() 

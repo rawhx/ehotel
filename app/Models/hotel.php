@@ -15,18 +15,20 @@ class hotel extends Model
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'name',
-        'kota',
-        'provinsi',
-        'no_telp',
-        'id_user'
-    ];
+    // protected $fillable = [
+    //     'name',
+    //     'kota',
+    //     'provinsi',
+    //     'no_telp',
+    //     'id_user'
+    // ];
+
+    protected $guarded = ['id_hotel', 'id'];
     
-    // public function user()
-    // {
-    //     return $this->belongsTo(User::class);
-    // }
+    public function user()
+    {
+        return $this->hasOne(User::class, 'id');
+    }
 
     /**
      * The attributes that should be hidden for serialization.

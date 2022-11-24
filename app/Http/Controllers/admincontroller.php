@@ -18,4 +18,14 @@ class admincontroller extends Controller
         $hotel = hotel::all();
         return view('admin/properti', ['hotel'=>$hotel]);
     }
+    public function ratting()
+    {
+        $hotel = hotel::all();
+        return view('admin/ratting', ['hotel'=>$hotel]);
+    }
+    public function transaksi()
+    {
+        $hotel = hotel::all();
+        return view('admin/transaksi', ['hotel'=>$hotel]);
+    }
 }

@@ -62,10 +62,31 @@
                 </div>
             </div>
         </div>
-    
         <div class="rp">
-            <h1>DAFTARKAN PROPERTI ANDA</h1>
-            <button data-target="#dp" data-toggle="modal">DAFTAR</button>
+            <div class="gtw" style="display: flex; justify-content: center; flex-direction: column; align-items: center">
+                @if (auth()->user()->lvl=='admin_hotel')
+                <h3 style="margin: 10px 0 10px 20px;">TRANSAKSI DITERIMA</h3>
+                <div class="tabel">
+                    <div class="judul">
+                        <h6 style="margin-left: 0">Id Pemesanan</h6>
+                        <h6>Email</h6>
+                        <h6>Tanggal</h6>
+                    </div>
+                    <div class="isitab">
+                        @for ($i = 0; $i < 100; $i++)
+                        <div class="hasil">
+                            <p style="margin-left: 0">1902</p>
+                            <p>luffy@gmail.com</p>
+                            <p>22/9/2022</p>
+                        </div>
+                        @endfor
+                    </div>
+                </div>
+                @else
+                <h1>DAFTARKAN PROPERTI ANDA</h1>
+                <button data-target="#dp" data-toggle="modal">DAFTAR</button>
+                @endif
+            </div>
         </div>
     </div>
 

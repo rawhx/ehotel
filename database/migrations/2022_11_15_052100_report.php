@@ -15,7 +15,7 @@ class Report extends Migration
     {
         Schema::create('reports', function (Blueprint $table) {
             $table->id('id_report')->unique();
-            $table->string('report');
+            $table->text('report');
             $table->foreignId('id_user')->nullable();
             $table->rememberToken();
             $table->timestamps();

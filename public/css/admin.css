@@ -19,6 +19,10 @@
     border-radius: 15px;
 }
 
+.pp::-webkit-scrollbar {
+    height: 5px;
+}
+
 .isi h4 {
     padding: 5px;
     border-radius: 15px 15px 0 0;
@@ -81,6 +85,31 @@
     font-family: 'Crimson Pro';
 }
 
+.isi-column textarea {
+    /* text-align: center; */
+    border: none;
+    resize: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: gainsboro;
+    margin-left: 15px;
+    font-size: 12pt;
+    font-family: 'Crimson Pro';
+}
+
+textarea::-webkit-scrollbar{
+    width: 0;
+}
+
+.isi-column form {
+    text-align: center;
+    width: 150px;
+    border-radius: 10px;
+    padding: 5px 0;
+    margin-left: 15px;
+}
+
 .xx {
     max-height: 350px;
     overflow-y: auto;
@@ -88,14 +117,14 @@
     width: fit-content;
 }
 
-.tindakan p{
+/* .tindakan {
     background-color: transparent;
-}
+} */
 
-.tindakan p svg {
+/* .tindakan form svg {
     width: 30px;
     height: 30px;
     box-shadow: 2px 2px 10px gainsboro;
     border-radius: 100%;
-}
+} */
 

@@ -15,12 +15,13 @@ class Hotel extends Migration
     public function up()
     {
         Schema::create('ehotel.hotels', function (Blueprint $table) {
-            $table->id('id_hotel');
+            $table->id();
+            // $table->id('id_hotel');
             $table->string('name')->unique();
             $table->string('kota');
             $table->string('provinsi');
-            $table->integer('no_telp');
-            $table->foreignId('id_user')->nullable();
+            $table->string('no_telp');
+            $table->foreignId('email')->constrained();
             $table->rememberToken();
             $table->timestamps();
         });

@@ -18,6 +18,11 @@ $(document).ready(function(){
       $('#register').modal('show');
       $('#pg').modal('hide');
     });
+
+  $("#lp").click(function(){
+      $('#lupa').modal('show');
+      $('#login').modal('hide');
+    });
 });
 
   

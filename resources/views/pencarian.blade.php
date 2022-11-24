@@ -55,7 +55,7 @@
                         </a>
                     </div>
                     <div class="pemesanan" style="padding: 15px 0;">
-                        <a href="/pesan" class="nav-link text-dark">
+                        <a href="/tiket" class="nav-link text-dark">
                             <span class="iconify" data-icon="uiw:date" data-width="35" style="margin-right: 20px;"></span>
                             <h4>PEMESANAN</h4>
                         </a>

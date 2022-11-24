@@ -71,7 +71,7 @@
 
         @auth
             <button type="button" id="btn" class="btn btn-primary" onclick="location.href='/profile'">
-                <h6 style="margin: 0;">HAI, HASBIL</h6>
+                <h6 style="margin: 0; text-transform: uppercase">HAI, {{auth()->user()->name}}</h6>
                 {{-- {{auth()->user->'name'}} --}}
             </button>
         @else

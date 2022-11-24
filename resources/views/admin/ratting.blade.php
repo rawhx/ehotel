@@ -39,7 +39,7 @@
                     </a>
                 </div>
                 <div class="properti" style="padding: 5px 0;">
-                    <a href="/properti" class="nav-link"  style="color: #C88109">
+                    <a href="/properti" class="nav-link text-dark">
                         <h4>DAFTAR PROPERTI</h4>
                     </a>
                 </div>
@@ -49,7 +49,7 @@
                     </a>
                 </div>
                 <div class="ratting" style="padding: 5px 0;">
-                    <a href="/ratting" class="nav-link text-dark">
+                    <a href="" class="nav-link" style="color: #C88109">
                         <h4>DAFTAR RATTING</h4>
                     </a>
                 </div>
@@ -66,7 +66,7 @@
             </div>
         </div>
         <div class="isi">
-            <h4>DAFTAR PROPERTI</h4>
+            <h4>DAFTAR RATTING</h4>
             <div class="cari">
                 <span class="iconify" data-icon="bi:search" style="color: white;" data-width="16"></span>
                 <form action="">
@@ -76,28 +76,17 @@
             <div class="pp">
                 <div class="judul-column">
                     <div class="no"><h6 style="width: 50px">NO</h6></div>
-                    <div class="ehp"><h6  style="width: 250px">NAMA HOTEL</h6></div>
-                    <div class="password"><h6  style="width: 250px">KOTA</h6></div>
-                    <div class="password"><h6  style="width: 250px">PEMILIK</h6></div>
-                    <div class="tindakan"><h6  style="width: 150px">TINDAKAN</h6></div>
+                    <div class="ehp"><h6  style="width: 250px">EMAIL</h6></div>
+                    <div class="password"><h6  style="width: 250px">HOTEL</h6></div>
+                    <div class="password"><h6  style="width: 250px">RATTING</h6></div>
                 </div>
                 <div class="xx">
                     @foreach ($hotel as $item)
                     <div class="isi-column">
                         <div class="no"><P style="width: 50px">{{$loop->iteration}}</P></div>
                         <div class="ehp"><P style="width: 250px">{{$item['name']}}</P></div>
-                        <div class="password"><P style="width: 250px">{{$item['kota']}}</P></div>
-                        <div class="password"><P style="width: 250px">{{$item['email']}}</P></div>
-                        <div class="tindakan">
-                            <form action="delete_hotel/{{$item->id}}" method="post" onclick="return confirm('Yakin Menghapus?')">
-                                @method('delete')
-                                @csrf
-                                <button style="background-color: transparent; border: none; cursor: pointer;">
-                                    <span class="iconify" data-icon="fluent:delete-16-regular" style="color: red;" data-width="20"></span>
-                                </button>
-                                {{-- <a href="{{ url('delete_hotel', $item->id_hotel) }}"></a> --}}
-                            </form>
-                        </div>
+                        <div class="password"><P style="width: 250px">{{$item['name']}}</P></div>
+                        <div class="password"><P style="width: 250px">5</P></div>
                     </div>
                     @endforeach
                 </div>

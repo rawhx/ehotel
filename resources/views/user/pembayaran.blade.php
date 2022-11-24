@@ -31,15 +31,15 @@
             <form action="">
                 <div class="aa" style="display: flex">
                     <div class="nama">
-                        <input type="text" name="nama" id="nama" placeholder="MASUKAN NAMA">
+                        <input type="text" name="nama" id="nama" placeholder="MASUKKAN NAMA">
                     </div>
                     <div class="email">
-                        <input type="email" placeholder="MASUKAN EMAIL">
+                        <input type="email" placeholder="MASUKKAN EMAIL">
                     </div>
                 </div>
                 <div class="dd" style="display: flex">
                     <div class="hp">
-                        <input type="text" name="nama" id="nama" placeholder="MASUKAN NAMA">
+                        <input type="number" min="1" name="orang" id="org" placeholder="MASUKKAN ORANG">
                     </div>
                     <div class="transaksi">
                         <select id="demo-htmlselect">

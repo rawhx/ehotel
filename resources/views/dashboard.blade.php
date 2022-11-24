@@ -34,7 +34,8 @@
             @endauth
         </div>
         <div class="search">
-            <form action="" method=""> 
+            <form action="/search" method="get">
+                @csrf 
                 <div class="pencarian">
                     <div class="kota">
                         <input type="text" style="width: 10cm; margin: 10px 5px 10px 0;" name="cari_kota" id="cari_kota" placeholder="MASUKAN KOTA, LOKASI ATAU HOTEL" required>
@@ -75,7 +76,7 @@
         <h1>TUJUAN POPULER</h1>
         <div class="lokasi">
             <div class="destinasi"> 
-                <a href="/cari-bali" style="color: black; text-decoration: none;">
+                <a href="/search" style="color: black; text-decoration: none;">
                     <div class="bali">
                         <img src="assets/bali.png" class="rounded float-start" alt="Bali">
                         <p>Bali</p>
@@ -141,7 +142,7 @@
             <h4>DAFTAR DAN DAPATKAN PROMO MENARIKNYA</h4>
             <form action="">
                 <input type="email" style="width: 12cm; font-size: 15pt;" placeholder="MASUKAN EMAIL ANDA">
-                <input type="submit" value="DAFTAR" name="daftar" id="daftar">
+                <input type="submit" value="DAFTAR" name="daftar" id="daftar" style="cursor: pointer">
             </form>
         </div>
     </div>

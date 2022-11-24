@@ -19,7 +19,10 @@ class logincontroller extends Controller
             if (auth()->user()->lvl=='admin') {
                 $request->session()->regenerate();
                 return redirect('/profile')->with('login', 'Selamat Datang Admin Di E-HOTEL');
-            } 
+            } elseif (auth()->user()->lvl=='banned') {
+                Auth::logout();
+                return back()->with('gagal', 'Anda Telah Dibanned');
+            }
             $request->session()->regenerate();
             return redirect()->back()->with('login', 'Selamat Datang Di E-HOTEL');
         } else {
@@ -36,11 +39,14 @@ class logincontroller extends Controller
             'password2' => 'required',
         ]);
 
-        if ($validasi['password'] = $validasi['password2']) {
+        if ($validasi['password'] == $validasi['password2']) {
             $validasi['password'] = bcrypt($validasi['password']);
             User::create($validasi);
-        } 
-        $request->session()->flash('berhasil', 'Registrasi Berhasil');
+            $request->session()->flash('berhasil', 'Registrasi Berhasil');
+        }  else {
+            $request->session()->flash('berhasil', 'Registrasi Gagal');
+        }
+        
         Auth::logout();
         return back();
     }
@@ -49,12 +55,5 @@ class logincontroller extends Controller
     {
         Auth::logout();
         return redirect('/')->with('logout', 'Berhasil Logout');
-    }
-
-    public function update_profile(Request $request)
-    {
-        $request->user()->update(
-            $request->all()
-        );    
     }
 }

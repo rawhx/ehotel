@@ -49,8 +49,13 @@
                     </a>
                 </div>
                 <div class="ratting" style="padding: 5px 0;">
-                    <a href="" class="nav-link text-dark">
+                    <a href="/ratting" class="nav-link text-dark">
                         <h4>DAFTAR RATTING</h4>
+                    </a>
+                </div>
+                <div class="transaksi" style="padding: 5px 0;">
+                    <a href="/transaksi" class="nav-link text-dark">
+                        <h4 style="font-size: 13pt">DAFTAR TRANSAKSI</h4>
                     </a>
                 </div>
                 <div class="logout" style="padding: 5px 0; border: none;">
@@ -61,7 +66,7 @@
             </div>
         </div>
         <div class="isi">
-            <h4>DAFTAR PENGGUNA</h4>
+            <h4>LAPORAN PERMASALAHAN</h4>
             <div class="cari">
                 <span class="iconify" data-icon="bi:search" style="color: white;" data-width="16"></span>
                 <form action="">
@@ -79,9 +84,10 @@
                     {{-- @for ($i = 0; $i < 100; $i++) --}}
                     <div class="isi-column">
                         <div class="no"><P style="width: 50px">{{ $loop->iteration}}</P></div>
-                        <div class="ehp" style="overflow: hidden"><P style="width: 250px">{{$item['report']}}</P></div>
-                        <div class="password"><P style="width: 400px; overflow: visible; padding: 5px">{{$item['report']}}</P></div>
+                        <div class="report" style="overflow: hidden"><P style="width: 250px">{{$item['email']}}</P></div>
+                        <div class="password"><textarea name="info" disabled style=" width: 400px;">{{$item['report']}}</textarea></div>
                     </div>
+                    {{-- <textarea name="" id="" cols="30" rows="10"></textarea> --}}
                     {{-- @endfor --}}
                     @endforeach
                 </div>
@@ -94,3 +100,11 @@
     </footer>
 </body>
 </html>
+
+<script>
+    const textarea = document.querySelector("textarea");
+    textarea.addEventListener('info',e = >{
+        let scHeight = e.target.scrollHeight;
+        textarea.style.height = '${scHeight}px'
+    })
+</script>
